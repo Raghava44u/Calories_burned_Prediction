@@ -1,0 +1,17 @@
+[2025-02-13 00:20:30,867] 18 data_load - ERROR - Error loading data
+Traceback (most recent call last):
+  File "e:\projects\Calories Prediction\src\data_load.py", line 13, in load_data
+    df = pd.merge(data2, data1, on="User_ID", how="left")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nares\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\reshape\merge.py", line 170, in merge
+    op = _MergeOperation(
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\nares\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\reshape\merge.py", line 794, in __init__
+    ) = self._get_merge_keys()
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nares\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\reshape\merge.py", line 1297, in _get_merge_keys
+    right_keys.append(right._get_label_or_level_values(rk))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nares\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\generic.py", line 1910, in _get_label_or_level_values
+    raise KeyError(key)
+KeyError: 'User_ID'

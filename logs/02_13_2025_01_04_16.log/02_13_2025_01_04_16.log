@@ -1,0 +1,11 @@
+[2025-02-13 01:04:17,763] 24 data_load - INFO -  Data successfully loaded and merged.
+[2025-02-13 01:04:17,769] 18 feature_engineering - INFO - Data preprocessing completed.
+[2025-02-13 01:04:36,775] 18 model_training - INFO - Cross-Validation R² Scores: [0.99818223 0.9977632  0.99807348 0.99782448 0.99768223]
+[2025-02-13 01:04:36,775] 19 model_training - INFO - Mean R² Score: 0.9979051208510631
+[2025-02-13 01:04:41,493] 22 model_training - INFO - Model training completed.
+[2025-02-13 01:04:41,851] 19 model_eval - ERROR - Error evaluating model
+Traceback (most recent call last):
+  File "e:\projects\Calories Prediction\src\model_eval.py", line 15, in evaluate_model
+    logger.info(f"Evaluation Results: R²: {r2}, MAE: {mae}, RMSE: {rmse}")
+                                                                   ^^^^
+NameError: name 'rmse' is not defined

@@ -1,0 +1,13 @@
+[2025-02-13 00:58:04,528] 24 data_load - INFO -  Data successfully loaded and merged.
+[2025-02-13 00:58:04,535] 18 feature_engineering - INFO - Data preprocessing completed.
+[2025-02-13 00:58:23,435] 18 model_training - INFO - Cross-Validation R² Scores: [0.99818223 0.9977632  0.99807348 0.99782448 0.99768223]
+[2025-02-13 00:58:23,435] 19 model_training - INFO - Mean R² Score: 0.9979051208510631
+[2025-02-13 00:58:27,900] 22 model_training - INFO - Model training completed.
+[2025-02-13 00:58:27,901] 32 model_training - ERROR - Error training model
+Traceback (most recent call last):
+  File "e:\projects\Calories Prediction\src\model_training.py", line 27, in train_model
+    joblib.dump(model, model_path)
+  File "C:\Users\nares\AppData\Local\Programs\Python\Python311\Lib\site-packages\joblib\numpy_pickle.py", line 552, in dump
+    with open(filename, 'wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'models/calories_model.pkl'

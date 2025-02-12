@@ -1,0 +1,19 @@
+[2025-02-13 01:03:34,688] 24 data_load - INFO -  Data successfully loaded and merged.
+[2025-02-13 01:03:34,695] 18 feature_engineering - INFO - Data preprocessing completed.
+[2025-02-13 01:03:54,259] 18 model_training - INFO - Cross-Validation R² Scores: [0.99818223 0.9977632  0.99807348 0.99782448 0.99768223]
+[2025-02-13 01:03:54,259] 19 model_training - INFO - Mean R² Score: 0.9979051208510631
+[2025-02-13 01:03:58,794] 22 model_training - INFO - Model training completed.
+[2025-02-13 01:03:59,098] 19 model_eval - ERROR - Error evaluating model
+Traceback (most recent call last):
+  File "e:\projects\Calories Prediction\src\model_eval.py", line 13, in evaluate_model
+    rmse = mean_squared_error(y, y_pred, squared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nares\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 194, in wrapper
+    params = func_sig.bind(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nares\AppData\Local\Programs\Python\Python311\Lib\inspect.py", line 3212, in bind
+    return self._bind(args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nares\AppData\Local\Programs\Python\Python311\Lib\inspect.py", line 3201, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'squared'

@@ -1,0 +1,21 @@
+[2025-02-13 00:10:35,486] 19 data_load - ERROR - Error loading data
+Traceback (most recent call last):
+  File "e:\projects\Calories Prediction\src\data_load.py", line 11, in load_data
+    calories_df = pd.read_csv("data/calories.csv", delimiter="\t")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nares\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\io\parsers\readers.py", line 1024, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nares\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\io\parsers\readers.py", line 618, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nares\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\io\parsers\readers.py", line 1618, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nares\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\io\parsers\readers.py", line 1878, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "C:\Users\nares\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'data/calories.csv'

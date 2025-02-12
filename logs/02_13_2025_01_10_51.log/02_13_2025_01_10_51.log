@@ -1,0 +1,8 @@
+[2025-02-13 01:10:53,722] 21 data_load - INFO -  Data successfully loaded and merged.
+[2025-02-13 01:10:53,728] 18 feature_engineering - INFO - Data preprocessing completed.
+[2025-02-13 01:11:13,043] 18 model_training - INFO - Cross-Validation R² Scores: [0.99818223 0.9977632  0.99807348 0.99782448 0.99768223]
+[2025-02-13 01:11:13,043] 19 model_training - INFO - Mean R² Score: 0.9979051208510631
+[2025-02-13 01:11:17,561] 22 model_training - INFO - Model training completed.
+[2025-02-13 01:11:17,872] 15 model_eval - INFO - Evaluation Results: R²: 0.9997387706780767, MAE: 0.6222466666666667
+[2025-02-13 01:11:32,945] 223 matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2025-02-13 01:11:32,957] 223 matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.

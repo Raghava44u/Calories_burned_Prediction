@@ -13,6 +13,10 @@ logging.basicConfig(
   level=logging.INFO,
 
 )
+def get_logger(name):
+    """Returns a logger instance."""
+    logger = logging.getLogger(name)
+    return logger
 #testing 
 """
 if __name__=="__main__":

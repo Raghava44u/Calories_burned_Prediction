@@ -1,0 +1,6 @@
+[2025-02-13 01:05:15,053] 21 data_load - INFO -  Data successfully loaded and merged.
+[2025-02-13 01:05:15,059] 18 feature_engineering - INFO - Data preprocessing completed.
+[2025-02-13 01:05:33,661] 18 model_training - INFO - Cross-Validation R² Scores: [0.99818223 0.9977632  0.99807348 0.99782448 0.99768223]
+[2025-02-13 01:05:33,661] 19 model_training - INFO - Mean R² Score: 0.9979051208510631
+[2025-02-13 01:05:38,115] 22 model_training - INFO - Model training completed.
+[2025-02-13 01:05:38,405] 15 model_eval - INFO - Evaluation Results: R²: 0.9997387706780767, MAE: 0.6222466666666667
